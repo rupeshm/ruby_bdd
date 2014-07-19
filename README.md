@@ -40,18 +40,18 @@ Scenario: To generate a repeating Invoice for a company
 4. Download chrome driver from http://chromedriver.storage.googleapis.com/index.html and IE driver from http://selenium-release.storage.googleapis.com/index.html. Extract these executables and put them in executable path.
 
    Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to the environment variable.
-
+5. Install ansicon from https://github.com/adoxa/ansicon to get coloured output in command prompt
 
 ## Basic Usage
 1. Clone or Download the repository
-   * If downloaded, extract the repository to local directory
+   - If downloaded, extract the repository to local directory
      * Example: Extract the repository to 'Documents\GitHub\ruby_bdd'
 
 2. Navigate to the test ruby_bdd from command prompt
    * Example: if the test is downloaded/cloned to 'Documents\GitHub\ruby_bdd' then open command prompt and navigate to 'Documents\GitHub\ruby_bdd'
 3. Execute the command 'cucumber'
-   * Example: On command prompt Documents\GitHub\ruby_bdd>cucumber
+   - Example: On command prompt Documents\GitHub\ruby_bdd>cucumber
    
-   * For advance reporting, execute the command 'cucumber -f pretty -f html -o report.html'
-     
+   - For advance reporting, execute the command 'cucumber -f pretty -f html -o report.html'
+
      This will output the result to STDOUT and also it will create a report.html file under rubby_bdd folder
