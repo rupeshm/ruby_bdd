@@ -1,4 +1,4 @@
-#BDD Testing Using Cucumber and Ruby
+#BDD Test using Cucumber and Ruby
 
 An demo script using cucumber, ruby and selenium web-driver to create repeating invoice
 
