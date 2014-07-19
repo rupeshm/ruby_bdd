@@ -33,7 +33,7 @@ Scenario: To generate a repeating Invoice for a company
 	Then I see New Repeating Invoice Generated
 ```
 
-## Pre-Requisites
+## Installation
 1. Install ruby from https://www.ruby-lang.org/en/installation/#rubyinstaller website.
 2. Install selenium-webdriver using command 'gem install selenium-webdriver'.
 3. Install cucumber using command 'gem install cucumber'.
@@ -42,21 +42,16 @@ Scenario: To generate a repeating Invoice for a company
    Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to the environment variable.
 
 
-## Test Setup
+## Basic Usage
 1. Clone or Download the repository
-2. If downloaded, extract the repository to local directory
+   * If downloaded, extract the repository to local directory
+     * Example: Extract the repository to 'Documents\GitHub\ruby_bdd'
 
-   Example: Extract the repository to 'Documents\GitHub\ruby_bdd'
-
-## Executing the Test
-- Navigate to the test folder ruby_bdd from command prompt/Terminal
-  
-  Example: if the test is downloaded/cloned to 'Documents\GitHub\ruby_bdd' then open command prompt and navigate to 'Documents\GitHub\ruby_bdd'
-- Execute the command 'cucumber -f pretty -f html -o report.html'
-  
-  Example: On command prompt Documents\GitHub\ruby_bdd>cucumber
-- Watch the automation test run
-
-- For advance reporting, execute the command 'cucumber -f pretty -f html -o report.html'
-  
-	This will output the result to STDOUT and also it will create a report.html file under rubby_bdd folder
+2. Navigate to the test ruby_bdd from command prompt
+   * Example: if the test is downloaded/cloned to 'Documents\GitHub\ruby_bdd' then open command prompt and navigate to 'Documents\GitHub\ruby_bdd'
+3. Execute the command 'cucumber'
+   * Example: On command prompt Documents\GitHub\ruby_bdd>cucumber
+   
+   * For advance reporting, execute the command 'cucumber -f pretty -f html -o report.html'
+     
+     This will output the result to STDOUT and also it will create a report.html file under rubby_bdd folder
