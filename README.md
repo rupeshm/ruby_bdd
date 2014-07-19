@@ -46,11 +46,13 @@ Scenario: To generate a repeating Invoice for a company
 1. Clone or Download the repository
 2. If downloaded, extract the repository to local directory
 
-   Example: Extract the repository to 'C:\Temp\ruby_bdd'
+   Example: Extract the repository to C:\Users\morer\Documents\GitHub\ruby_bdd'
 
 ## Executing the Test
 - Navigate to the test folder ruby_bdd from command prompt/Terminal
   
-  Example: if the test is downloaded to 'C:\Temp\ruby_bdd' then open command prompt and navigate to C:\Temp\ruby_bdd
+  Example: if the test is downloaded to 'Documents\GitHub\ruby_bdd' then open command prompt and navigate to 'Documents\GitHub\ruby_bdd'
 - Execute the command 'cucumber'
+  
+  Example: On command prompt Documents\GitHub\ruby_bdd>cucumber
 - Watch the automation test run
