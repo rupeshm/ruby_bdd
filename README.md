@@ -55,3 +55,13 @@ Scenario: To generate a repeating Invoice for a company
    - For advance reporting, execute the command 'cucumber -f pretty -f html -o report.html'
 
      This will output the result to STDOUT and also it will create a report.html file under ruby_bdd folder
+
+## Advance Usage
+Note: The default browser set to execute is chrome, change the following snippet in demo.rb file
+```ruby
+	driver = Selenium::WebDriver.for :chrome
+	to 
+	driver = Selenium::WebDriver.for :ie
+	or
+	driver = Selenium::WebDriver.for :firefox
+```
