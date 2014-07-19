@@ -39,7 +39,7 @@ Scenario: To generate a repeating Invoice for a company
 3. Install cucumber using command 'gem install cucumber'.
 4. Download chrome driver from http://chromedriver.storage.googleapis.com/index.html and IE driver from http://selenium-release.storage.googleapis.com/index.html. Extract these executables and put them in executable path.
 
-Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to the environment variable.
+   Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to the environment variable.
 
 
 ## Test Setup
