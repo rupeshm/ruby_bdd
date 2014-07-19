@@ -51,7 +51,7 @@ Scenario: To generate a repeating Invoice for a company
 ## Executing the Test
 - Navigate to the test folder ruby_bdd from command prompt/Terminal
   
-  Example: if the test is downloaded to 'Documents\GitHub\ruby_bdd' then open command prompt and navigate to 'Documents\GitHub\ruby_bdd'
+  Example: if the test is downloaded/cloned to 'Documents\GitHub\ruby_bdd' then open command prompt and navigate to 'Documents\GitHub\ruby_bdd'
 - Execute the command 'cucumber'
   
   Example: On command prompt Documents\GitHub\ruby_bdd>cucumber
