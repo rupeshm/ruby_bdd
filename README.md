@@ -43,8 +43,8 @@ Scenario: To generate a repeating Invoice for a company
 
 
 ## Test Setup
-1. Download the repository
-2. Extract the repository to local directory
+1. Clone or Download the repository
+2. If downloaded, extract the repository to local directory
 
    Example: Extract the repository to 'C:\Temp\ruby_bdd'
 
