@@ -1,7 +1,7 @@
 require 'selenium-webdriver'
 require 'rspec-expectations'
 
-#================= Start of Function and Classes Libraries =================#
+#========= Start of Function and Classes Libraries =========#
 def mouse_over_and_click(element)
   $driver.execute_script("if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover', true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}", element)
   
@@ -31,7 +31,6 @@ end
 def find_by_id(id)
   $driver.find_element(:id,""+id+"")
 end
-# Function Libraries -- End
 
 # Invoice Table Class -- Start
 class InvoiceTable
@@ -75,7 +74,6 @@ class InvoiceTable
   end
   def delete()
     delete_elm = table_Element("Delete",@rowNo)
-    #delete_elm = $driver.find_element(:xpath,"(//div[@class='x-grid3-cell-inner x-grid3-col-colDelete x-unselectable'])["+@rowNo+"]/div/div")
     mouse_over_and_click(delete_elm)
   end
   def add_new_line()
@@ -95,7 +93,7 @@ class LoginPage
 end
 # Login Class -- End
 
-#================= End of Function and Classes Libraries =================#
+#========= End of Function and Classes Libraries =========#
 
 #================= Start of Script =================#
 $driver = Selenium::WebDriver.for :chrome
@@ -124,12 +122,6 @@ end
 Given /^I am on Dashboard Page$/ do
   $driver.find_element(css: 'a#Dashboard').text.should == "Dashboard"
 end
-
-=begin
-Given /^I already have an existing organisation$/ do
-  $driver.find_element(css: 'h2.org-name>a').text.should == "ABC Inc"
-end
-=end
 
 When /^I click on Accounts Tab$/ do
   $driver.find_element(id: 'Accounts').click
@@ -215,7 +207,6 @@ When /^perform actions in the invoice table$/ do
 
 When /^I click on save button$/ do
   $driver.find_element(css: "div[class='buttons footer no-margin-bottom'] button>Span").click
-  wait.until { $driver.execute_script("return document.readyState;") == "complete" }
 end
 
 Then /^I see New Repeating Invoice Generated$/ do
