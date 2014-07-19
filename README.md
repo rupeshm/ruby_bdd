@@ -38,6 +38,7 @@ Scenario: To generate a repeating Invoice for a company
 2. Install selenium-webdriver using command 'gem install selenium-webdriver'.
 3. Install cucumber using command 'gem install cucumber'.
 4. Download chrome driver from http://chromedriver.storage.googleapis.com/index.html and IE driver from http://selenium-release.storage.googleapis.com/index.html. Extract these executables and put them in executable path.
+
 Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to the environment variable.
 
 
@@ -53,10 +54,3 @@ Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to th
   Example: if the test is downloaded to 'C:\Temp\ruby_bdd' then open command prompt and navigate to C:\Temp\ruby_bdd
 - Execute the command 'cucumber'
 - Watch the automation test run
-
-
-
-
-
-
-
