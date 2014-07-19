@@ -54,4 +54,4 @@ Scenario: To generate a repeating Invoice for a company
    
    - For advance reporting, execute the command 'cucumber -f pretty -f html -o report.html'
 
-     This will output the result to STDOUT and also it will create a report.html file under rubby_bdd folder
+     This will output the result to STDOUT and also it will create a report.html file under ruby_bdd folder
