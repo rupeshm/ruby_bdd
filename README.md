@@ -50,10 +50,8 @@ Scenario: To generate a repeating Invoice for a company
 
 2. Navigate to the test ruby_bdd from command prompt
    * Example: if the test is downloaded/cloned to 'Documents\GitHub\ruby_bdd' then open command prompt and navigate to 'Documents\GitHub\ruby_bdd'
-3. Execute the command 'cucumber'
-   - Example: On command prompt Documents\GitHub\ruby_bdd>cucumber
-   
-   - For advance reporting, execute the command 'cucumber -f pretty -f html -o report.html'
+3. Execute the command ```cucumber```
+  - For advance reporting, execute the command ```cucumber -f pretty -f html -o report.html```
 
      This will output the result to STDOUT and also it will create a report.html file under ruby_bdd folder
 
