@@ -1,12 +1,12 @@
 require 'selenium-webdriver'
 require 'rspec-expectations'
 
-#========= Start of Function and Classes Libraries =========#
+#========= Start of function and classes library =========#
 def mouse_over_and_click(element)
   $driver.execute_script("if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover', true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}", element)
   
   $driver.execute_script("if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('click', true, false); arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onclick');}", element)
-  sleep(0.2)
+  sleep(0.1) # Since script execution is very fast this will help slow the execution for mouse actions
 end
 def table_Element(column,rowNum)
   if column == 'Delete'
@@ -93,7 +93,7 @@ class LoginPage
 end
 # Login Class -- End
 
-#========= End of Function and Classes Libraries =========#
+#========= End of function and classes library =========#
 
 #================= Start of Script =================#
 $driver = Selenium::WebDriver.for :chrome
@@ -201,7 +201,7 @@ When /^perform actions in the invoice table$/ do
 
   # Add new blank row by clicking "Add New Line Button"
   thirdRow.add_new_line
-  # Add new existing inventory item to the new third row
+  # Add existing inventory item to the new third row
   thirdRow.item("PostIT")
   end
 
