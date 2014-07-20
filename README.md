@@ -37,10 +37,11 @@ Scenario: To generate a repeating Invoice for a company
 1. Install ruby from https://www.ruby-lang.org/en/installation/#rubyinstaller website.
 2. Install selenium-webdriver using command 'gem install selenium-webdriver'.
 3. Install cucumber using command 'gem install cucumber'.
-4. Download chrome driver from http://chromedriver.storage.googleapis.com/index.html and IE driver from http://selenium-release.storage.googleapis.com/index.html. Extract these executables and put them in executable path.
+4. Install rspec using command 'gem install rspec'.
+5. Download chrome driver from http://chromedriver.storage.googleapis.com/index.html and IE driver from http://selenium-release.storage.googleapis.com/index.html. Extract these executables and put them in executable path.
 
    Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to the environment variable.
-5. Install ansicon from https://github.com/adoxa/ansicon to get coloured output in command prompt
+6. Install ansicon from https://github.com/adoxa/ansicon to get coloured output in command prompt
 
 ## Basic Usage
 1. Clone or Download the repository
