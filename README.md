@@ -35,9 +35,9 @@ Scenario: To generate a repeating Invoice for a company
 
 ## Installation
 1. Install ruby from https://www.ruby-lang.org/en/installation/#rubyinstaller website.
-2. Install selenium-webdriver using command 'gem install selenium-webdriver'.
-3. Install cucumber using command ```ruby 'gem install cucumber'.```
-4. Install rspec using command 'gem install rspec'.
+2. Install selenium-webdriver using command ```gem install selenium-webdriver```
+3. Install cucumber using command ```gem install cucumber```
+4. Install rspec using command ```gem install rspec```
 5. Download chrome driver from http://chromedriver.storage.googleapis.com/index.html and IE driver from http://selenium-release.storage.googleapis.com/index.html. Extract these executables and put them in executable path.
 
    Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to the environment variable.
