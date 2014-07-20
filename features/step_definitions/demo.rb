@@ -123,7 +123,7 @@ Then /^I see the Xero Dashboard Page$/ do
   $driver.find_element(css: 'a#Dashboard').text.should == "Dashboard"
 end
 
-Then /^I see the organisation name listed$/ do
+Then /^I see the <organization> name listed$/ do
   $driver.find_element(css: 'span#title').text.should == @organization
 end
 
