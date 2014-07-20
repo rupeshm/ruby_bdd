@@ -169,7 +169,7 @@ end
 When /^I enter all the necessary data in edit fields$/ do
   $driver.find_element(id: 'TimeUnit_toggle').click
   $driver.find_element(id: 'StartDate_container').click
-  $driver.find_element(id: 'StartDate').send_keys Date.today+1).strftime("%d %b %Y")
+  $driver.find_element(id: 'StartDate').send_keys (Date.today+1).strftime("%d %b %Y")
   $driver.find_element(id: 'DueDateDay').send_keys "1"
   $driver.find_element(id: 'DueDateType_toggle').click
   $driver.find_element(id: 'DueDateType_toggle').click
