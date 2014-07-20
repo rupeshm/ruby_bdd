@@ -105,9 +105,17 @@ Given /^I am on Xero login Page$/ do
   $driver.find_element(css: "h2[class='x-boxed noBorder']").text.should == "Welcome to Xero"
 end
 
-When /^I enter valid user credentials$/ do
+Given /^I have the following user data:$/ do |table|
+  table.hashes.each do |hash|
+    @userID = hash["userID"]
+    @password = hash["password"]
+    @organization = hash["organization"]
+  end
+end
+
+When /^I enter valid <userID> and <password> credentials$/ do
   xeroUser = LoginPage.new # Make use of login class
-  xeroUser.login("rupesh.more@hotmail.com","Timber07") # your userid and password will go here
+  xeroUser.login(@userID,@password)
   wait.until { $driver.execute_script("return document.readyState;") == "complete" }
 end
 
@@ -116,7 +124,7 @@ Then /^I see the Xero Dashboard Page$/ do
 end
 
 Then /^I see the organisation name listed$/ do
-  $driver.find_element(css: 'span#title').text.should == "ABC Inc"
+  $driver.find_element(css: 'span#title').text.should == @organization
 end
 
 Given /^I am on Dashboard Page$/ do
