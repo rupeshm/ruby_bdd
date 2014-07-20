@@ -174,7 +174,7 @@ When /^I enter all the necessary data in edit fields$/ do
   $driver.find_element(id: 'DueDateType_toggle').click
   $driver.find_element(id: 'DueDateType_toggle').click
   $driver.find_element(id: 'saveAsAutoApproved').click
-  $driver.find_element(css: "input[type='text'][id^='PaidToName_']").send_keys "Automation Task" # input#PaidToCo ntactID+div>input
+  $driver.find_element(css: "input[type='text'][id^='PaidToName_']").send_keys "Automation Task"
   $driver.find_element(css: "input[type='text'][id^='Reference_']").send_keys "Workflow"
 end
 
