@@ -35,7 +35,7 @@ Scenario: To generate a repeating Invoice for a company
 		And I click on save button
 	Then I see New Repeating Invoice Generated
 ```
-Edit the 'demo.feature' file to change the table data
+Edit the 'demo.feature' file to change the values in the table
 
 ## Installation
 1. Install ruby from https://www.ruby-lang.org/en/installation/#rubyinstaller website.
