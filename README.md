@@ -11,7 +11,7 @@ Scenario: To generate a repeating Invoice for a company
 	Given I am on Xero login Page
 	And I have the following user data:
 		|	userID					|	password	| organization	|
-		|	rupesh.more@hotmail.com	|	Timber07	| ABC Inc		|
+		|	rupesh.more@hotmail.com	|	XeroDem0	| ABC Inc		|
 
 	When I enter valid <userID> and <password> credentials
 	Then I see the Xero Dashboard Page
