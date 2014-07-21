@@ -4,8 +4,8 @@ Scenario: To generate a repeating Invoice for a company
 
 	Given I am on Xero login Page
 	And I have the following user data:
-		| userID		  | password | organization	|
-		| rupesh.more@hotmail.com | XeroDem0 | ABC Inc	|
+		| userID		  | password | organization | inventoryItem 	|
+		| rupesh.more@hotmail.com | XeroDem0 | ABC Inc	    | PostIT		|
 
 	When I enter valid <userID> and <password> credentials
 	Then I see the Xero Dashboard Page
