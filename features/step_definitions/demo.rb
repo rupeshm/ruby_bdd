@@ -110,6 +110,7 @@ Given /^I have the following user data:$/ do |table|
     @userID = hash["userID"]
     @password = hash["password"]
     @organization = hash["organization"]
+    @invItem = hash["inventoryItem"]
   end
 end
 
@@ -210,7 +211,7 @@ When /^perform actions in the invoice table$/ do
   # Add new blank row by clicking "Add New Line Button"
   thirdRow.add_new_line
   # Add existing inventory item to the new third row
-  thirdRow.item("PostIT")
+  thirdRow.item(@invItem)
   end
 
 When /^I click on save button$/ do
@@ -221,4 +222,7 @@ Then /^I see New Repeating Invoice Generated$/ do
   wait.until { $driver.find_element(id: 'notify01').displayed? }
   $driver.find_element(css: "div#notify01 p").text.include? "Repeating Template Saved."
 end
+
+# Uncomment following line to close the browser after execution
+#$driver.quit
 #================= End of Script =================#
