@@ -39,7 +39,7 @@ Edit the 'demo.feature' file to change the values in the table
 
 ## Installation
 1. Install ruby from https://www.ruby-lang.org/en/installation/#rubyinstaller website.
-   - For windows download from http://rubyinstaller.org/, install ruby 1.9.3p545
+   - For windows, download from http://rubyinstaller.org/, install ruby 1.9.3p545
    - Install ruby DevKit
 2. Install selenium-webdriver using command ```gem install selenium-webdriver```
 3. Install cucumber using command ```gem install cucumber```
