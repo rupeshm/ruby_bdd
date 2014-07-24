@@ -41,11 +41,18 @@ Edit the 'demo.feature' file to change the values in the table
 1. Install ruby from https://www.ruby-lang.org/en/installation/#rubyinstaller website.
 2. Install selenium-webdriver using command ```gem install selenium-webdriver```
 3. Install cucumber using command ```gem install cucumber```
-4. Install rspec using command ```gem install rspec```
+4. Install rspec using command ```gem install rspec-expectations```
 5. Download chrome driver from http://chromedriver.storage.googleapis.com/index.html and IE driver from http://selenium-release.storage.googleapis.com/index.html. Extract these executables and put them in executable path.
 
    Example: Extract the driver to 'C:\Temp\SeleniumDriver\' and put this path to the environment variable.
-6. Install ansicon from https://github.com/adoxa/ansicon to get coloured output in command prompt
+6. Download ansicon v1.66 from http://adoxa.altervista.org/ansicon/ to get coloured output in command prompt.
+
+	For ansicon, add x86 (if your OS is 32-bit) or x64 (if 64-bit) to your PATH, or copy the relevant files to a directory already in the PATH.
+	
+	Alternatively, use option -i (or -I, if permitted) to install it permanently.  
+	Example: if ansicon is extracted to path 'C:\Temp\ansi166' 
+	- For 32-bit OS - In command Prompt ```C:\Temp\ansi166\x86 > ansicon -i```
+	- For 64-bit OS - In command Prompt ```C:\Temp\ansi166\x64 > ansicon -i```
 
 ## Basic Usage
 1. Clone or Download the repository
